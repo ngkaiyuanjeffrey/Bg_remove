@@ -1,0 +1,6 @@
+Options -Indexes
+<FilesMatch "^(config\.php|config\.example\.php|bootstrap\.php|README\.md|INSTALL_XAMPP\.md|DEPLOY_CPANEL\.md|SECURITY\.md)$">
+Require all denied
+</FilesMatch>
+RewriteEngine On
+RewriteRule ^(config|includes|services|cron)/ - [F,L]
